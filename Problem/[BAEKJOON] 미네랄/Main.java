@@ -42,18 +42,18 @@ public class Main{
 			
 			int mak = Integer.parseInt(st.nextToken());
 			
-			if (k%2 == 0) { // 왼쪽 부터
+						if (k%2 == 0) { // 왼쪽 부터
 				for (int j = 0; j < C; j++) {
-					if(map[C-mak][j] == 'x') {
-						map[C-mak][j] = '.';
+					if(map[R-mak][j] == 'x') {
+						map[R-mak][j] = '.';
 						break;
 					}
 				}
 			}
 			else {		// 오른쪽
-				for (int j = R-1; j >= 0; j--) {
-					if(map[C-mak][j] == 'x') {
-						map[C-mak][j] = '.';
+				for (int j = C-1; j >= 0; j--) {
+					if(map[R-mak][j] == 'x') {
+						map[R-mak][j] = '.';
 						break;
 					}
 				}
