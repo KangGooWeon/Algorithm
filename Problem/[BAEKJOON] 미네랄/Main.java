@@ -1,4 +1,3 @@
-package bak;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -42,7 +41,7 @@ public class Main{
 			
 			int mak = Integer.parseInt(st.nextToken());
 			
-						if (k%2 == 0) { // 왼쪽 부터
+			if (k%2 == 0) { // 왼쪽 부터
 				for (int j = 0; j < C; j++) {
 					if(map[R-mak][j] == 'x') {
 						map[R-mak][j] = '.';
