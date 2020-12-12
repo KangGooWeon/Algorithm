@@ -6,6 +6,7 @@ class Solution {
         List<Integer> list = new ArrayList<>();
         int[] complete = new int[progresses.length];
         
+        // 완료날짜 파악
         for(int i=0; i<progresses.length; i++){
             int temp = 100 - progresses[i];
             int index = 0;
@@ -18,12 +19,13 @@ class Solution {
             complete[i] = day;
         }
         
+        //완료 날짜 통일
         for(int i=0; i<complete.length-1; i++){
             if(complete[i] < complete[i+1]) continue;
             
             complete[i+1] = complete[i];
         }
-        
+       
         int day = 0;
         for(int i=0; i<complete.length; i++){
             day++;
