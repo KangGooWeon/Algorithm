@@ -9,6 +9,7 @@ class Solution
         while(true){
             n = n/2;
             
+            //만나게 되고, 건너편 대진표가 아닐때
             if( A+1 == B && B%2==0) break;
             
             if( A%2 == 0) A = A/2;
